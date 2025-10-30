@@ -26,7 +26,6 @@ def build_standart_beck():
 
 def shuffle_by_suit(deck:list[dict],swaps = 5000):
     import random
-    swaps = 1000
     while swaps:
         random_index_i = random.randint(0, 51)
         random_index_j = random.randint(0, 51)
