@@ -1,3 +1,4 @@
+import random
 
 def create_card(rank:str,suite:str):
     upper_case_rank = rank.upper()
@@ -25,7 +26,6 @@ def build_standart_beck():
     return list_card
 
 def shuffle_by_suit(deck:list[dict],swaps = 5000):
-    import random
     while swaps:
         random_index_i = random.randint(0, 51)
         random_index_j = random.randint(0, 51)
